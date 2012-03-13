@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<head>
+
+<script type="text/javascript">
+
+
+function myAct(){
+var x=document.getElementById("coffee").value;
+
+}
+
+function setElementVisibility(elementToSet, showItSwitch){
+ if(showItSwitch)
+
+elementToSet.style.visibility = "visible";
+else
+elementToSet.style.visibility = "hidden";
+}
+
+
+function showTable(){
+ setElementVisibility(document.getElementById("tab"),true);
+}
+
+function hideTable(){
+ setElementVisibility(document.getElementById("tab"), false);
+}
+
+</script> 
+
+
+<style type="text/css">
+
+table{position:absolute; top:140px; left:24%;font-weight:bold; visibility:hidden;}
+td{font-size:bold;padding-left:10px;}
+
+#any{position:absolute; top:100px; left:200px;font-size=30px; font-weight:bold;}
+#send{position:absolute; top:100px; left:550px;font-size=30px;}
+
+
+</style>
+</head>
+
+<body>
+
+<form name="anyone"> 
+
+<input type="text" name="anyone" value="Anyone for " size="50" maxlength="100" id="any" onClick="showTable()" />
+<input type="button" value="Send" id="send" onClick='javascript:window.location.href="third.html"' />
+<input type="button" value="show"  onClick="showTable()" />
+<input type="button" value="hide"  onClick="hideTable()" />
+
+
+</form>
+
+
+
+<table id="tab">
+<tr>
+
+<td> <input type="button" value="coffee" id="coffee" onClick=' myAct()' /> </td>
+<td> <a href="Third.html">Beer</a> </td>
+<td>Lunch</td>
+<td>Poker</td>
+<td>Ride Home</td>
+<td>PlayStation</td>
+
+</tr>
+
+
+
+</table>
+
+
+
+
+</body>
+
+</html>
+
